@@ -1,0 +1,203 @@
+:root {
+    --bg-main:        rgba(38, 38, 38, 0.7);
+    --text-primary:   #4ade80;
+    --text-secondary: #9ca3af;
+    --border-accent:  #166534;
+    --text-white:     #ffffff;
+    --shadow:         0 10px 15px -3px rgba(0,0,0,.5);
+    --radius:         0.5rem;
+    --table-row-odd:  rgba(42, 42, 42, 0.8);
+    --table-row-even: rgba(38, 38, 38, 0.8);
+}
+
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: rgba(38, 38, 38, 1);
+}
+
+a {
+    color: var(--text-primary);
+}
+
+button {
+    background-color: var(--bg-main);
+    color:            var(--text-white);
+    border-radius:    0.5rem;
+    border:           solid 1px;
+    border-color:     var(--border-accent);
+}
+
+.min-h-screen { 
+    min-height: 100vh;
+}
+
+.container {
+    max-width:      90%;
+    margin:         0 auto;
+    padding-top:    1rem;
+}
+
+
+.flex     { display: flex;          }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row;    }
+
+.items-center { align-items: center;     }
+.items-left   { align-items: flex-start; }
+
+.justify-center  { justify-content: center;        }
+.justify-between { justify-content: space-between; }
+
+
+.grid {
+    gap:            1.5rem;
+    display:        grid;
+    grid-column:    auto;
+    padding-bottom: 1rem;
+}
+
+.grid-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+
+.panel {
+    border: 1px solid var(--border-accent);
+    padding: 1rem;
+    box-shadow: var(--shadow);
+    overflow-x: hidden;
+    border-radius: var(--radius);
+    background-color: var(--bg-main);
+}
+
+
+.text-primary   { color: var(--text-primary); }
+.text-secondary { color: var(--text-secondary); }
+.text-white     { color: var(--text-white); }
+
+.text-sm { font-size: 15px; }
+.text-lg { font-size: 17px; }
+.text-xl { font-size: 19px; }
+
+.font-bold  { font-weight: bold;   }
+.italic     { font-style:  italic; }
+.text-right { text-align:  right;  }
+
+
+.section-title {
+    margin-top:     -5px;
+    border-bottom:  1px solid var(--border-accent);
+    padding-bottom: 0.25rem;
+    margin-bottom:  0.5rem;
+}
+
+
+.table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+
+.table th {
+    border: none;
+    border-color: var(--text-primary);
+    padding: 0.25rem 0;
+
+    color: var(--text-primary);
+    background-color: var(--table-row-even);
+    text-align: left;
+}
+
+.table td {
+    border: none;
+    border-color: var(--text-primary);
+    padding: 0.25rem 0;
+    color: var(--text-white);
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: var(--table-row-odd);
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: var(--table-row-even);
+}
+
+
+blockquote {
+    border-left: 4px solid var(--border-accent);
+    padding-left: 1rem;
+    margin: 0;
+}
+
+
+.hidden { display: none; }
+
+
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 768px) {
+    .md\:hidden { display: none; }
+    .md\:block { display: block; }
+    .md\:flex-row { flex-direction: row; }
+
+    .md\:space-x-8 > * + * {
+        margin-left: 2rem;
+    }
+
+    .md\:p-0 { padding: 0; }
+}
+
+
+.nav-link {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    color: var(--text-white);
+    text-decoration: none;
+    border-radius: var(--radius);
+}
+
+.nav-link:hover {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+}
+
+.nav-link-active {
+    color: var(--text-primary);
+    border-bottom: 2px solid var(--border-accent);
+}
+
+
+/*
+ * Modal data
+*/
+.modal-backdrop {
+    position:   fixed;
+    top:        0;
+    left:       0;
+    width:      100vw;
+    height:     100vh;
+    background: var(--bg-main);
+    z-index:    99999;
+}
+
+.modal-window {
+    position:      fixed;
+    top:           50%;
+    left:          50%;
+    width:         70%;
+    transform:     translate(-50%, -50%);
+    padding:       20px;
+    box-shadow:    0 2px 5px rgba(0, 0, 0, 1);
+    border-radius: 5px;
+    z-index:       1000;
+    background:    rgba(38, 38, 38, 1);
+    padding:       1rem;
+    overflow:      auto;
+}
+
