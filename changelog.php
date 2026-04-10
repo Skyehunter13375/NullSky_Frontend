@@ -15,9 +15,41 @@
 
     <body>
         <?php print_header($thisFileName); ?>
-        <div class="container">
+        <div class="container text-sm">
+            <div class='panel' style='margin-bottom: 1rem;'>
+                <h2 class='text-xl text-primary'>April 2026</h2>
+                <ul class='text-white' style='margin-left: -20px'>
+                    <li>04/10
+                    <ul class='text-white'>
+                        <li>Took a little more than a month off to focus on other projects and life events.
+                        <li>Created a ticketing system/suggestion box today and decided to switch back to postgres...again...turns out I can't live without arrays as columns.
+                        <li>Anyone can input a ticket but they cannot be modified yet except by me in the DB. Will work on that functionality next.
+                        <li>It's a heaviliy modified (and simplified) version of the ticketing system I built for my previous employer to manage case esclations through the tiers of support.
+                        <li>VoidEngine needs an oil change, it stopped running a little while ago when it tried to refresh during server ST server maintenance which I didn't account for in error handling.
+                        <li>I haven't converted that code back to PostgreSQL yet either, that willc ome soon.
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-sm">
             <div class='panel' style='margin-bottom: 1rem;'>
                 <h2 class='text-xl text-primary'>February 2026</h2>
+                <ul class='text-white' style='margin-left: -20px'>
+                    <li>02/21
+                    <ul class='text-white'>
+                        <li>I took the plunge and moved this project into Amazon Web Services (AWS) to get it out of my home network. This came with a littany of challenges.
+                        <ul>
+                            <li>1) Creating the VM instance and getting SSH keys set up
+                            <li>2) Registering a domain (AWS shadow restricts the account from buying domains until a manual review is done...that's not documented anywhere...)
+                            <li>3) After several weeks my account lock was lifted and I could actually buy the domain
+                            <li>4) Getting DNS to line up between Route53 and Lightsail
+                            <li>5) Lots ... and lots ... of waiting for things to synchronize between AWS systems.
+                        </ul>
+                        <li>As of 03/03 I think I have the kinks ironed out. Once DNS records sync up and propogate everything should resolve?
+                        <li>During this break I also renamed the git repos and the project names to NullSky (front-end) and VoidEngine (back-end) and split the code up into proper locations on the server.
+                        <li>I should be able to get back to work on this 03/04 once AWS starts behaving.
+                    </ul>
+                </ul>
                 <ul class='text-white' style='margin-left: -20px'>
                     <li>02/04
                     <ul class='text-white'>

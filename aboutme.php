@@ -14,10 +14,10 @@
 
     <body>
         <?php print_header($thisFileName); ?>
-        <div class="min-h-screen text-primary">
+        <div class="min-h-screen text-primary text-sm">
             <div class="container">
                 <div class="panel">
-                    <h2 class="text-lg section-title">About Me</h2>
+                    <h2 class="text-xl section-title">About Me</h2>
                     <p style="color: var(--text-white);">
                         I am a Linux system administrator and software engineer with roughly a decade of experience working at the intersection of technical support and software development.<br>
                         Building tools to resolve common issues or prevent them from ever appearing in the first place is my passion.<br><br>
@@ -31,7 +31,7 @@
                 </div><br>
 
                 <div class="panel">
-                    <h2 class="text-lg section-title">Professional Projects</h2>
+                    <h2 class="text-xl section-title">Professional Projects</h2>
                     <ul style="margin-left: -20px; color: var(--text-white);">
                         <li>Linux VM Monitoring & Troubleshooting Suite
                         <ul style="color: var(--text-secondary)">
@@ -65,7 +65,7 @@
                 </div><br>
 
                 <div class="panel">
-                    <h2 class="text-lg section-title">Personal Projects</h2>
+                    <h2 class="text-xl section-title">Personal Projects</h2>
                     <ul style="margin-left: -20px; color: var(--text-white);">
                         <li>Personal Homelab
                         <ul style="color: var(--text-secondary)">
@@ -94,7 +94,7 @@
 
                 <div class="grid grid-3">
                     <div class="panel">
-                        <h2 class="text-lg section-title">Links</h2>
+                        <h2 class="text-xl section-title">Links</h2>
                         <ul style="margin-left: -20px; color: var(--text-white);">
                             <li>LinkedIn: <a target="_blank" style="color: var(--text-secondary);" href="https://www.linkedin.com/in/patrick-kelley-19490b132/">Patrick Kelley</a>
                             <li>Github:   <a target="_blank" style="color: var(--text-secondary);" href="https://github.com/Skyehunter13375">Skyehunter13375</a>
@@ -102,14 +102,14 @@
                     </div>
 
                     <div class="panel">
-                        <h2 class="text-lg section-title">Certifications</h2>
+                        <h2 class="text-xl section-title">Certifications</h2>
                         <ul style="margin-left: -20px; color: var(--text-white);">
                             <li>In Progress - CompTIA Linux+
                         </ul>
                     </div>
 
                     <div class="panel">
-                        <h2 class="text-lg section-title">Udemy Courses</h2>
+                        <h2 class="text-xl section-title">Udemy Courses</h2>
                         <ul style="margin-left: -20px; color: var(--text-white);">
                             <li>In Progress - Backend Engineering with Go
                             <li>09/20/2025  - Advanced SQL Bootcamp

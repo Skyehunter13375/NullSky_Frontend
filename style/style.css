@@ -85,6 +85,7 @@ button {
 .text-right { text-align:  right;  }
 
 
+
 .section-title {
     margin-top:     -5px;
     border-bottom:  1px solid var(--border-accent);
@@ -201,3 +202,14 @@ blockquote {
     overflow:      auto;
 }
 
+
+
+input,
+textarea,
+select {
+    background: var(--bg-main);
+    color: var(--text-main);
+    border: 1px solid var(--border-accent);
+    padding: 8px;
+    border-radius: 4px;
+}

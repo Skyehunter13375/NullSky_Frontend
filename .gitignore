@@ -3,3 +3,5 @@ Php_Error.log
 Web_Activity.log
 Web_Error.log
 .htaccess
+config.php
+logs/*

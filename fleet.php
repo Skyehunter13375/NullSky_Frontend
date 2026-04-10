@@ -20,7 +20,7 @@
 
     <body>
         <?php print_header($thisFileName); ?>
-        <div class="min-h-screen text-primary">
+        <div class="min-h-screen text-primary text-sm">
             <div class="container">
                 <div class="grid grid-4">
                     <?php 

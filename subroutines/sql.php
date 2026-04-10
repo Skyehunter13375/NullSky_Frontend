@@ -17,4 +17,3 @@ function SELECT($statement) {
     $db->close();
     return $rows;
 }
-

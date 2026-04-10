@@ -18,7 +18,8 @@ function print_header($current) {
         'fleet.php'       => 'Fleet',
         'systems.php'     => 'Systems',
         'changelog.php'   => 'Changelog',
-        'aboutme.php'     => 'AboutMe'
+        'aboutme.php'     => 'AboutMe',
+        'request.php'     => 'Suggestions/Issues'
     ];
 
     print("
